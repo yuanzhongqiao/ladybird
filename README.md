@@ -1,55 +1,35 @@
-# Ladybird
-
-[Ladybird](https://ladybird.org) is a truly independent web browser, using a novel engine based on web standards.
-
-> [!IMPORTANT]
-> Ladybird is in a pre-alpha state, and only suitable for use by developers
->
-
-## Features
-
-We aim to build a complete, usable browser for the modern web.
-
-Ladybird uses a multi-process architecture with a main UI process, several WebContent renderer processes,
-an ImageDecoder process, and a RequestServer process.
-
-Image decoding and network connections are done out of process to be more robust against malicious content.
-Each tab has its own renderer process, which is sandboxed from the rest of the system.
-
-At the moment, many core library support components are inherited from SerenityOS:
-
-- LibWeb: Web rendering engine
-- LibJS: JavaScript engine
-- LibWasm: WebAssembly implementation
-- LibCrypto/LibTLS: Cryptography primitives and Transport Layer Security
-- LibHTTP: HTTP/1.1 client
-- LibGfx: 2D Graphics Library, Image Decoding and Rendering
-- LibArchive: Archive file format support
-- LibUnicode: Unicode and locale support
-- LibMedia: Audio and video playback
-- LibCore: Event loop, OS abstraction layer
-- LibIPC: Inter-process communication
-
-## How do I build and run this?
-
-See [build instructions](Documentation/BuildInstructionsLadybird.md) for information on how to build Ladybird.
-
-Ladybird runs on Linux, macOS, Windows (with WSL2), and many other \*Nixes.
-
-## How do I read the documentation?
-
-Code-related documentation can be found in the [documentation](Documentation/) folder.
-
-## Get in touch and participate!
-
-Join [our Discord server](https://discord.gg/nvfjVJ4Svh) to participate in development discussion.
-
-Please read [Getting started contributing](Documentation/GettingStartedContributing.md) if you plan to contribute to Ladybird for the first time.
-
-Before opening an issue, please see the [issue policy](CONTRIBUTING.md#issue-policy) and the [detailed issue-reporting guidelines](ISSUES.md).
-
-The full contribution guidelines can be found in [`CONTRIBUTING.md`](CONTRIBUTING.md).
-
-## License
-
-Ladybird is licensed under a 2-clause BSD license.
+<div class="Box-sc-g0xbh4-0 QkQOb js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">瓢虫</font></font></h1><a id="user-content-ladybird" class="anchor" aria-label="永久链接：瓢虫" href="#ladybird"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://ladybird.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ladybird</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是一款真正独立的网络浏览器，使用基于网络标准的新颖引擎。</font></font></p>
+<div class="markdown-alert markdown-alert-important" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重要的</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ladybird 处于预 alpha 阶段，仅适合开发人员使用</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h2><a id="user-content-features" class="anchor" aria-label="固定链接：功能" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的目标是为现代网络构建一个完整、可用的浏览器。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ladybird 使用多进程架构，包括一个主 UI 进程、多个 WebContent 渲染器进程、一个 ImageDecoder 进程和一个 RequestServer 进程。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像解码和网络连接在进程外完成，以更好地抵御恶意内容。每个选项卡都有自己的渲染器进程，该进程与系统其余部分隔离。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目前，许多核心库支持组件都是从SerenityOS继承而来的：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibWeb：Web 渲染引擎</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibJS：JavaScript 引擎</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibWasm：WebAssembly 实现</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibCrypto/LibTLS：加密原语和传输层安全性</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibHTTP：HTTP/1.1 客户端</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibGfx：2D 图形库、图像解码和渲染</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibArchive：存档文件格式支持</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibUnicode：Unicode 和区域设置支持</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibMedia：音频和视频播放</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibCore：事件循环，操作系统抽象层</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LibIPC：进程间通信</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我该如何构建和运行它？</font></font></h2><a id="user-content-how-do-i-build-and-run-this" class="anchor" aria-label="永久链接：我如何构建和运行它？" href="#how-do-i-build-and-run-this"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关如何构建 Ladybird 的信息，</font><font style="vertical-align: inherit;">请参阅</font></font><a href="/LadybirdBrowser/ladybird/blob/master/Documentation/BuildInstructionsLadybird.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建说明。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ladybird 可在 Linux、macOS、Windows（带有 WSL2）和许多其他 *Nixes 上运行。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我如何阅读文档？</font></font></h2><a id="user-content-how-do-i-read-the-documentation" class="anchor" aria-label="永久链接：如何阅读文档？" href="#how-do-i-read-the-documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="/LadybirdBrowser/ladybird/blob/master/Documentation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码相关的文档可以在文档文件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">夹中找到</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系我们并参与！</font></font></h2><a id="user-content-get-in-touch-and-participate" class="anchor" aria-label="永久链接：取得联系并参与！" href="#get-in-touch-and-participate"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入</font></font><a href="https://discord.gg/nvfjVJ4Svh" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的 Discord 服务器</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参与开发讨论。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您计划首次为 Ladybird 做出贡献，</font><font style="vertical-align: inherit;">请阅读</font></font><a href="/LadybirdBrowser/ladybird/blob/master/Documentation/GettingStartedContributing.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始贡献。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在提出问题之前，请参阅</font></font><a href="/LadybirdBrowser/ladybird/blob/master/CONTRIBUTING.md#issue-policy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题政策</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="/LadybirdBrowser/ladybird/blob/master/ISSUES.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">详细的问题报告指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完整的贡献指南可以在 中找到</font></font><a href="/LadybirdBrowser/ladybird/blob/master/CONTRIBUTING.md"><code>CONTRIBUTING.md</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2><a id="user-content-license" class="anchor" aria-label="永久链接：许可证" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ladybird 是根据 2 条款 BSD 许可证授权的。</font></font></p>
+</article></div>
